@@ -1,0 +1,24 @@
+{
+  "name": "typescript---dio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasPedro123/App-DioBank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasPedro123/App-DioBank/issues"
+  },
+  "homepage": "https://github.com/LucasPedro123/App-DioBank#readme",
+  "description": ""
+}
