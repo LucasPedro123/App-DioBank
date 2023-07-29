@@ -12,14 +12,14 @@ export abstract class DioAccount {
     deposit = (value : number)=>{
         if(this.status === true){
             this.balance = value
-            console.log("Transação realizada com sucesso!")
+            console.log(`Valor do deposito de: ${value}, realizado com sucesso!`)
             console.log(`Saldo atual: ${this.balance}`)
         }
     }
     depositAdmin = (value: number)=>{
         if(this.status === true){
             this.balance = value + 10
-            console.log("Transação realizada com sucesso!")
+            console.log(`Deposito de: ${value}, realizado com sucesso!`)
             console.log(`Saldo atual: ${this.balance}`)
 
         }
@@ -30,8 +30,8 @@ export abstract class DioAccount {
             const summation: number = this.balance + value;
             this.balance = summation;
 
-            console.log("Empréstimo realizado com sucesso!")
-            console.log(`Saldo atual ${this.balance}`)
+            console.log(`Transfêrencia do empréstimo de: ${value}, realizado com sucesso!`)
+            console.log(`Saldo atual: ${this.balance}`)
         }
     }
     withdraw = (withdraw: number)=>{
@@ -39,7 +39,7 @@ export abstract class DioAccount {
             const subtraction: number = this.balance - withdraw
             this.balance = subtraction
 
-            console.log("Saque realizado com sucesso!")
+            console.log(`Saque de: ${withdraw}, realizado com sucesso!`)
             console.log(`Saldo atual ${this.balance}`)
 
         }
